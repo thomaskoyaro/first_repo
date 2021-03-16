@@ -2,5 +2,26 @@
 title: "Getting Started with Git"
 author: "Thomas K Oyaro"
 date: "3/16/2021"
-output: html_document
+output:
+  pdf_document: default
+  html_document: default
 ---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+My *first* version controlled project in RStudio
+
+Getting started using cars data as test
+
+```{r, test-plot}
+plot(cars, col = "blue", xlab = "Speed (mph)", ylab = "Distance (miles)")
+```
+
+A summary of the data frame is given below
+```{r}
+library(knitr)
+kable(summary(cars))
+```
+
